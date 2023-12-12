@@ -1,0 +1,112 @@
+/* --------------------- Event 2 Style --------------------- */
+
+.Eventcontainer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Eventcontainer .eventcontent {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    font-size: larger;
+}
+
+.eventTwoBackgroundimg {
+    width: 100%;
+    height: auto;
+}
+
+.eventWelcomeText {
+    font-size: x-large;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.eventTwoMainImg {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.eventTwomainback {
+    background-color: rgba(80, 78, 76, 0.194);
+    padding: 20px;
+}
+
+.eventTopics {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: rgb(92, 102, 58);
+    font-size: xx-large;
+}
+
+.eventMainDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventSubDiv {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+}
+
+.eventMainDesc {
+    font-size: large;
+    font-style: italic;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* responsive code */
+@media screen and (max-width: 768px) {
+    .Eventcontainer .eventcontent {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .eventMainDesc {
+        margin-top: 5%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .eventMainDiv {
+        flex-direction: column;
+    }
+
+    .eventSubDiv {
+        width: 100%;
+        margin: 0;
+    }
+
+    .eventTwoMainImg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .eventTopics {
+        font-size: x-large;
+    }
+    
+    @media screen and (min-width: 769px) {
+        .Eventcontainer .eventcontent {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+    }
+}

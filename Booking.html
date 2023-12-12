@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="Booking.js" defer></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    </head>
+    <title>The Serene Heaven Hotel</title>
+    <body>
+<!-- Navigation Bar Starts Here -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="images/WhatsApp Image 2023-08-22 at 23.20.25.jpeg" width="120px" height="110px">
+                </div>
+                <ul class="navlist">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Branch.html">Branches</a></li>
+                    <li><a href="Adventure.html">Adventure</a></li>
+                    <li><a href="Restaurant.html">Restaurent</a></li>
+                    <li><a href="Booking.html">Booking</a></li>
+                </ul>
+            </nav>
+        </header>
+ <!-- Navigation Bar Ends Here -->
+
+
+
+<!--Booking Form Start-->
+        <div class="bookingmainbackgroundimg">
+            <div id="booktext">
+                Serene Haven Hotel Resevation
+            </div>
+        </div>
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="number" name="number" placeholder="+94775678896">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <main>
+            <!-- <section id="form">
+                <form class="form3">
+                    <fieldset>
+                        <div class="bookingform">
+                            <label>Full Name </label>
+                            <input type="text"  name="name" max="30">
+                            <label>Mobile Number </label>
+                            <input type="text"  number="number" max="30">
+                            <label>Email </label>
+                            <input type="text"  email="email" max="30">
+                        </div>
+                    </fieldset>
+                </form>
+            </section> -->
+            <section id="form">
+                <form class="form3">    
+                    <div class="bookingform">
+                        <p>
+                            <fieldset>
+                                <label for="hotel">Select The Hotel Branch</label>
+                                <select id="hotel">
+                                    <option value="beruwala">Beruwala</option>
+                                    <option value="dubai">Dubai</option>
+                                    <option value="maldives">Maldives</option>
+                                </select>
+                            </fieldset>
+                        </p>
+                        <fieldset>
+                            <legend>Hotel Room</legend>
+                            <p>
+                                <label form="room">Decide How Many Rooms You Need</label>
+                                <input type="number" id="roomnumber" value="0" min="0" max="15" required>
+                            </p>
+
+                            <p>
+                                <label for="roomsize" >Choose The Room Sizes</label>
+                                <select id="roomsize" required>
+                                    <option value="single">Single</option>
+                                    <option value="double">Double</option>
+                                    <option value="triple">Triple</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="extraroom">Do You Require An Additional Bed(8000LKR)</label>
+                                <select id="bed">
+                                    <option value="yes">Yes</option>
+                                    <option value="no" selected>No</option>
+                                </select>
+                            </p>
+                        </fieldset>
+
+                        <p>
+                            <fieldset>
+                                <legend>Total Number Of Children And Adults</legend>
+                                <p>
+                                    <label for="rooms">Number Of Adults</label>
+                                    <input type="number" id="numadults" value="0" min="0" max="15" required>
+                                </p>
+
+                                <p>
+                                    <label for="rooms">Number Of Children</label>
+                                    <input type="number" id="numchildren" value="0" min="0" max="15" required>
+                                </p>
+
+                                <p>
+                                    <label for="room">Extra Meals for children above 5 (5000 LKR)</label>
+                                    <input type="number" id="childmeal" value="0" min="0" max="15">
+                                </p>
+                            </fieldset>
+                        </p>
+
+                        <p>
+                            <fieldset>
+                                <legend>Checking Date And Checkout Date</legend>
+
+                                <p>
+                                    <label for="checkin">Select The Checkin Date</label>
+                                    <input type="date" id="checkin" required>
+                                </p>
+                                <p>
+                                    <label for="time">Select The Checkin Time</label>                                                                                   
+                                    <input type="time" id="checkintime" required>
+                                </p>
+                                <p>
+                                    <label for="duration">Decide How Long You want To Stay</label>
+                                    <input type="number" id="checkstaying" value="0" min="0" max="20" required>
+                                </p>
+                            </fieldset>
+                        </p>
+
+                        <p>
+                            <fieldset>
+                                <legend>Additional Requeirments As Needed</legend>
+                                <p>
+                                    <label for="view">Room View</label>
+                                    <select id="view">
+                                        <option id="pool"> Pool View</option>
+                                        <option id="garden"> Garden View</option>
+                                        <option id="beach"> Beach View</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="wifi">Wifi</label>
+                                    <input type="checkbox" id="wifi">
+                                </p>
+                            </fieldset>
+                        </p>
+                        <p>
+                            <input type="reset" value="reset" id="resetbtn">
+                        </p>
+                    </div>
+        <!-- </form> -->
+    </section>
+
+    <section>
+        <p id="text">Booking Adventure</p>            
+    </section>
+
+    <section>
+        <form id="form" class="">
+            <div class="booking-form">
+                <p>
+                    <fieldset>
+                        <legend>Type Of Tourist</legend>
+                        <p>
+                            <label for="foregin">Foregin or Local</label>
+                            <select id="type">
+                                <option value="foregin" id="foregin">Foregin</option>
+                                <option value="local" id="local">Local</option>
+                            </select>       
+                        </p>
+                    </fieldset>
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Adults And children</legend>
+                        <p>
+                            <label for="rooms">Put The Total Number Of Adults</label>
+                            <input type="number" id="numadults2" value="0" min="0" max="15" required>
+                        </p>
+                        <p>
+                            <label for="rooms">Add Any children Who Are Older Than 5</label>
+                            <input type="number" id="chil2" value="0" min="0" max="15" required>
+                        </p>
+                        <p>
+                            <label for="gkids">Time duration (1hr - adults 5000 / children 2000)</label>
+                            <input type="number" id="tduration"  value="0" min="0" max="15">
+                        </p>
+                    </fieldset>
+                </p>
+
+                <p>
+                    <fieldset>
+                        <legend>Guidance for diving session</legend>
+                        <p>
+                            <label for="gadults">Guidance for diving Adults (1000 LKR)</label>
+                            <input type="checkbox" id="diviadults">
+                        </p>
+                        <p>
+                            <label for="gkids">Guidance for diving Children (500 LKR)</label>
+                            <input type="checkbox" id="divichild" >
+                        </p>
+                    </fieldset>
+                </p>
+                                    
+                <p>
+                    <fieldset>
+                        <p id="cost"></p>
+                    </fieldset>
+                </p>                                                    
+                                    
+                <p class="pbox">
+                    <fieldset>
+                        <p>
+                            <label for="promocode">Enter the promo code to get discount</label>
+                            <input type="text" id="promocode" max="20">
+                        </p>
+                    </fieldset>
+                </p>
+                                
+                <p class="bbutton">
+                    <input type="reset" value="reset" id="resetbtn2">
+                </p>
+                <p>
+                    <input type="button" value="Book Adventure" id="submitbtn">
+                </p>
+                                    
+                <p id="output2"></p>
+                                    
+                <p> 
+                    <input type="button" value="Book now" id="submitbtn2">
+                </p>
+
+                <p id="output"></p> 
+
+                <p>
+                    <input type="button" value="Check loyalty points" id="loyaltybtn"> 
+                </p>
+                <p id="loyalty"></p>
+                <p>
+                    <input type="button" value="Add to favourite" id="favourite">
+                    <input type="button" value="Show favourite" id="shfavourite">
+                </p>
+            </div>
+        </form>
+    </section>
+    <!--Booking Form End-->
+
+    <h2 style="text-align:center">Rooms</h2>
+    <div class="coverDiv">
+        <div class="card">
+            <img src="images/7CE79D8C-8CE6-464F-AE4F-B8AF345B835C_1_105_c.jpeg" alt="Delux Lake View Room"
+            style="width:100%">
+            <h1>Delux Pool View</h1>
+            <!-- <p class="price">LKR 15,000.00</p> -->
+            <p>Our Deluxe Lake View Rooms at the Serene Haven Hotel let you live a life of luxury.</p>
+        </div>
+        <div class="card">
+            <img src="images/TAL-hotel-room-interior-bed-BOOKHOTEL0223-786eb1910382404a8806d1e1e8ed7716.jpg"
+            alt="Delux Lake View Room" style="width:100%">
+            <h1>Serene Haven Suite Garden View</h1>
+            <!-- <p class="price">LKR 25,000.00</p> -->
+            <p>Discover complete solitude in one of our Serene Haven Suite rooms, where luxury and
+            peace are seamlessly merged.</p>
+        </div>
+        <div class="card">
+            <img src="images/Luxury-Ocean-View-Room-1-1170x780.jpg" alt="Delux Lake View Room" style="width:100%">
+            <h1>Ocean View</h1>
+            <!-- <p class="price">LKR 35,000.00</p> -->
+            <p>Serene Haven Hotel's Deluxe Ocean View Rooms offer coastal luxury, allowing you to enjoy the soothing
+            sound of waves.</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer - Start -->
+<div class="footer">
+    <div class="footerTopic">
+         The Serene Hotel
+    </div>
+    <div class="content">
+    <div class="social-media">
+        <h4>Social</h4>
+        <p>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsettings%2Faccount%3Flang%3Den"
+            target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram"></i>
+            Instagram</a>
+        </p>
+    </div>
+    <div class="links">
+        <h4>Quick links</h4>
+        <p><a href="Home.html">Home</a></p>
+        <p><a href="Branch.html">Branches</a></p>
+        <p><a href="Adventure.html">Adventure</a></p>
+        <p><a href="Restaurant.html">Restaurant</a></p>
+        <p><a href="Booking.html">Booking</a></p>
+    </div>
+    <div class="details">
+        <h4 class="address">Address</h4>
+        <p>
+            No: 112 <br><br>
+            Pasikuda Beach Rd, <br> <br>
+            Pasikuda <br> <br>
+            Sri Lanka.
+        </p>
+    </div>
+    <div class="details">
+        <h4 class="mobile">Mobile</h4>
+        <p><a href="tel:94701234567">+94-701234567</a></p>
+        <h4 class="mail">Email</h4>
+        <p><a href="mailto:info@serenehotels.com">info@serenehotels.com</a></p>
+    </div>
+</div>
+<footer>
+    <hr />
+    © 2022 serene hotels group
+</footer>
+</div>
+<!-- Footer - End -->
+</body>
+
+</html>

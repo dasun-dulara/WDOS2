@@ -1,0 +1,79 @@
+/* --------------------- Event 1 Style --------------------- */
+
+.Eventcontainer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Eventcontainer .eventcontent {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: larger;
+}
+
+/* responsive code */
+@media screen and (max-width: 768px) {
+    .Eventcontainer .eventcontent {
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center; 
+    }
+}
+
+.weddingBackgroundimg {
+    width: 100%;
+    height: auto;
+}
+
+.eventOneMainImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.weddingmainback {
+    background-color: rgba(80, 78, 76, 0.194);
+}
+
+.weddingtopics {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: rgb(92, 102, 58);
+    font-size: xx-large;
+}
+
+.weddingMainDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weddingSubDiv {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.weddingMainDesc {
+    font-size: large;
+    font-style: italic;
+    line-height: 1.7;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+}
+
+/* responsive code */
+@media screen and (min-width: 768px) {
+    .weddingSubDiv {
+        width: 50%;
+    }
+}
